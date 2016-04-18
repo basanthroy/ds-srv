@@ -1,1 +1,0 @@
-{"algoName":"rm_pixel_opti","algoType":"plus_1_dimensional","rollupEntityType":"ADVERTISER","dimensionTypeIds":[1,2]}

@@ -8,9 +8,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>DW Datascience Services</title>
   </head>
   <body>
-  $END$
+  Algorithm definition service<br>
+  Dimension definition service<br>
+  Enqueue request service<br>
   </body>
 </html>

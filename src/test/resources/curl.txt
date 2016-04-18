@@ -1,1 +1,3 @@
-curl -H "Content-Type: application/json" http://localhost:8080/algorithm/ -d '{"algoName":"rm_pixel_opti","algoType":"plus_1_dimensional","rollupEntityType":"ADVERTISER","dimensionTypeIds":[1,2]}'
+curl -H "Content-Type: application/json" http://localhost:8080/DWServices/algorithm -d '{"algoId":5, "algoName":"basanth_algo 5","algoType":"plus_1_dimensional","rollupEntityType":"ADVERTISER","dimensionTypeIds":[1,2]}'
+curl -H "Content-Type: application/json" http://localhost:8080/DWServices/dimension -d '{"dimensionId":8 , "dimensionName" : "basanth_test_dim 218"}'
+curl -H "Content-Type: application/json" http://localhost:8080/DWServices/arte/app/enqueue -d '{"algoId":1010}'
