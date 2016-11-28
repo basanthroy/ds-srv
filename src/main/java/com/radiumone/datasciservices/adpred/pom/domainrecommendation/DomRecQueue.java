@@ -58,6 +58,7 @@ public class DomRecQueue {
     private Integer lineId;
 
     @Column(name = "target_cpm")
+    @NotNull(message = "targetCpm cannot be null")
     private BigDecimal targetCpm;
 
     @Column(name = "uniques")
