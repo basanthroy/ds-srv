@@ -3,6 +3,7 @@ package com.radiumone.datasciservices.configuration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.view.JstlView;
 import org.springframework.web.servlet.view.UrlBasedViewResolver;
@@ -14,7 +15,7 @@ import org.springframework.web.servlet.view.UrlBasedViewResolver;
 @EnableWebMvc
 @PropertySource({
         "classpath:datasci-services.properties",
-        "file:/opt/apps/DWServices.properties"})
+        "${DW_SERVICES_CONFIGURL}"})
 public class WebAppConfig {
 
     @Bean
@@ -26,4 +27,8 @@ public class WebAppConfig {
         return resolver;
     }
 
+    @Bean
+    public static PropertySourcesPlaceholderConfigurer placeHolderConfigurer() {
+        return new PropertySourcesPlaceholderConfigurer();
+    }
 }
