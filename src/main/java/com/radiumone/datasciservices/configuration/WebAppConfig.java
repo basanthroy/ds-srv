@@ -13,9 +13,9 @@ import org.springframework.web.servlet.view.UrlBasedViewResolver;
  */
 @Configuration
 @EnableWebMvc
-@PropertySource({
+@PropertySource(value = {
         "classpath:datasci-services.properties",
-        "${DW_SERVICES_CONFIGURL}"})
+        "${DW_SERVICES_CONFIGURL}"}, ignoreResourceNotFound = true)
 public class WebAppConfig {
 
     @Bean
