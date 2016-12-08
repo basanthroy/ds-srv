@@ -6,5 +6,6 @@ package com.radiumone.datasciservices.adpred.algorithm;
 public enum RollupEntityType {
     ADVERTISER,
     LINE,
-    STRATEGY
+    STRATEGY,
+    PIXEL2PIXEL
 }

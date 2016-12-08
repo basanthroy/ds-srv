@@ -14,5 +14,6 @@
   Algorithm definition service<br>
   Dimension definition service<br>
   Enqueue request service<br>
+  Domain Recommendation request service<br>
   </body>
 </html>
